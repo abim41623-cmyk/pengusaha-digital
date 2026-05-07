@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Layanan Kami</h1>
+    {% for p in produk %}
+    <div class="product-card">
+        <h3>{{ p.nama }}</h3>
+        <p>{{ p.deskripsi }}</p>
+        <p><strong>Harga: {{ p.harga }}</strong></p>
+    </div>
+    {% endfor %}
+{% endblock %}
